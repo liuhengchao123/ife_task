@@ -1,45 +1,52 @@
-body {
+
+body, html {
     margin: 0;
     padding: 0;
     background-color: gainsboro;
-    font-family: "Microsoft YaHei";
+    font-family: 'Microsoft YaHei','Hiragino Sans GB',Helvetica,Arial,'Lucida Grande',sans-serif;
+    min-width: 700px;
 }
 
-#head {
-    background-color: black;
+/* header */
+.header {
+    background-color: #353535;
     width: 100%;
-    height: 100px;
+    height: 70px;
 }
 
-#head a {
+.header a {
     color:white;
     text-decoration: none;
 }
 
-#head a:visited{
+.header a:hover{
     color: darkgray;
 }
 
-#head img{
+.header img{
     height: 50px;
     width: auto;
-    margin: 25px 0 0 25px;
+    margin: 5px 0 0 25px;
 }
 
-#list {
-    position: relative;
+.right {
     float: right;
-    height: 100px;
-    line-height: 100px;
+}
+
+.right ul {
+    position: relative;
+    height: 70px;
+    line-height: 70px;
     margin: 0 20px 0;
 }
 
-#list li {
-    display: inline-block;
-    margin-left: 15px;
+.right ul li {
+    float: left;
+    margin-left: 30px;
     font-size: 15px;
 }
 
+/* article */
 article {
     width: 95%;
     background-color: white;
@@ -72,7 +79,7 @@ article ul li {
     font-weight: 600;
 }
 
-.photo {
+figure {
     border: thin solid darkgray;
     width: 150px;
     height: 150px;
@@ -82,12 +89,12 @@ article ul li {
     -webkit-box-sizing:border-box; /* Safari */
 }
 
-.photo figcaption {
+figcaption {
     margin-top: 10%;
     font-weight: 600;
 }
 
-.photo img {
+figure img {
     max-width: 80%;
     margin-top: 10%;
 }
@@ -125,6 +132,7 @@ article table tbody tr.result {
 
 }
 
+/* aside */
 aside {
     width: 94%;
     background-color: white;
@@ -181,14 +189,15 @@ aside #submit {
     font-weight: 600;
     color: white;
     font-size: 17px;
-    background-color: blue;
+    background-color: #3355d0;
 
 }
 
+/* footer */
 footer{
     height: 100px;
     width: 100%;
-    background-color: black;
+    background-color: #353535;
     color: white;
     font-weight: bold;
     text-align: center;
